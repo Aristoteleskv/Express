@@ -23,7 +23,7 @@ class CustomButton extends StatelessWidget {
                 width: 100,
                 height: 100,
                 decoration: BoxDecoration(
-                  color: ConstantColors().SecundaColor,
+                  color: ConstantColors().secundaColor,
                   border: Border.all(
                     color: Colors.black38,
                     width: 1,

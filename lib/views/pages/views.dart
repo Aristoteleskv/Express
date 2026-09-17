@@ -31,7 +31,7 @@ class Compras extends StatefulWidget {
 
 class _ComprasState extends State<Compras> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -62,7 +62,7 @@ class _ComprasState extends State<Compras> {
                 textAlign: TextAlign.center,
                 "COMPRAS",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),
@@ -171,7 +171,7 @@ class Consultas extends StatefulWidget {
 
 class _ConsultasState extends State<Consultas> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -202,7 +202,7 @@ class _ConsultasState extends State<Consultas> {
                 textAlign: TextAlign.center,
                 "CONSULTAS",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),
@@ -311,7 +311,7 @@ class Pagamentos extends StatefulWidget {
 
 class _PagamentosState extends State<Pagamentos> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -342,7 +342,7 @@ class _PagamentosState extends State<Pagamentos> {
                 textAlign: TextAlign.center,
                 "PAGAMENTOS",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),
@@ -451,7 +451,7 @@ class Transferencias extends StatefulWidget {
 
 class _TransferenciasState extends State<Transferencias> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -482,7 +482,7 @@ class _TransferenciasState extends State<Transferencias> {
                 textAlign: TextAlign.center,
                 "TRANSFERENCIAS",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),
@@ -591,7 +591,7 @@ class Levantamento extends StatefulWidget {
 
 class _LevantamentoState extends State<Levantamento> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   Widget build(BuildContext context) {
@@ -622,7 +622,7 @@ class _LevantamentoState extends State<Levantamento> {
                 textAlign: TextAlign.center,
                 "LEVANTAMENTO",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),

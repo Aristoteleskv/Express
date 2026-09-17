@@ -52,7 +52,7 @@ class Erro extends StatelessWidget {
                       width: 250.0,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(8),
-                          color: ConstantColors().PrimaryColor),
+                          color: ConstantColors().primaryColor),
                       child: GestureDetector(
                           child: Center(
                             child: Text(
@@ -60,7 +60,7 @@ class Erro extends StatelessWidget {
                               style: TextStyle(
                                 fontFamily: 'Arial',
                                 fontSize: 19,
-                                color: ConstantColors().TextoColor3,
+                                color: ConstantColors().textoColor3,
                               ),
                             ),
                           ),

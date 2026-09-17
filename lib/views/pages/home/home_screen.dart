@@ -31,7 +31,7 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   int _current = 0;
-  final CarouselController _controller = CarouselController();
+  final CarouselSliderController _controller = CarouselSliderController();
 
   @override
   void initState() {
@@ -97,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 textAlign: TextAlign.center,
                 "CARTÕES",
                 style: TextStyle(
-                    color: ConstantColors().TextoColor2,
+                    color: ConstantColors().textoColor2,
                     fontWeight: FontWeight.bold,
                     fontSize: 23.0),
               ),
