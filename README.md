@@ -5,6 +5,12 @@ Aplicativo de compras e transferencias e consultas da EMIS.
 
 Este é um clone, feito em flutter e dart.
 
+## 🚀 Melhorias Recentes
+- **Compatibilidade**: Atualizado para Flutter 3.x e Dart 3.
+- **Segurança**: Correção de navegação segura (Async Gaps).
+- **Estabilidade**: Atualização de dependências críticas (`dio`, `flutter_secure_storage`, `hive`).
+- **Refatoração**: Padronização de código e correção de nomes de variáveis.
+
 #Matutadidi Aristoteles Kivova
 
 ![logo](https://github.com/Aristoteleskv/Express/assets/20368961/ce11a5da-6601-4a8c-bd21-dfe0995dd232)
