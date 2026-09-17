@@ -28,13 +28,13 @@ class AuthenticationPIN extends StatelessWidget {
           create: (_) =>
               AuthenticationPinBloc(pinRepository: HivePINRepository()),
           child: BlocListener<AuthenticationPinBloc, AuthenticationPinState>(
-            listener: (context, state) {
-              if (state.pinStatus == AuthenticationPINStatus.equals) {
+            listener: (context, state) async {
+              if (state.pinStatus == AuthenticationPINStatus.equals ||
+                  state.pinStatus == AuthenticationPINStatus.unequals) {
                 showDialog(
                   context: context,
+                  barrierDismissible: false,
                   builder: (context) => const Center(
-                    widthFactor: 500,
-                    heightFactor: 500,
                     child: CircularProgressIndicator(
                       strokeWidth: 8,
                       backgroundColor: Colors.orange,
@@ -42,27 +42,17 @@ class AuthenticationPIN extends StatelessWidget {
                     ),
                   ),
                 );
-                Future.delayed(
-                  const Duration(seconds: 2),
-                  () => Navigator.of(context).pushNamed('/home'),
-                );
-              } else if (state.pinStatus == AuthenticationPINStatus.unequals) {
-                showDialog(
-                  context: context,
-                  builder: (context) => const Center(
-                    widthFactor: 500,
-                    heightFactor: 500,
-                    child: CircularProgressIndicator(
-                      strokeWidth: 8,
-                      backgroundColor: Colors.orange,
-                      color: Colors.grey,
-                    ),
-                  ),
-                );
-                Future.delayed(
-                  const Duration(seconds: 1),
-                  () => Navigator.of(context).pushNamed('/erro'),
-                );
+
+                await Future.delayed(const Duration(seconds: 1));
+                
+                if (context.mounted) {
+                  Navigator.of(context).pop(); // Fecha o dialog
+                  if (state.pinStatus == AuthenticationPINStatus.equals) {
+                    Navigator.of(context).pushReplacementNamed('/home');
+                  } else {
+                    Navigator.of(context).pushNamed('/erro');
+                  }
+                }
               }
             },
             child: Column(

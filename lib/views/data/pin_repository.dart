@@ -31,10 +31,8 @@ class HivePINRepository extends PINRepository {
   @override
   void close() async {
     if (Hive.isBoxOpen(_boxName)) {
-      Box<String> box = await Hive.box(_boxName);
-      var v = await box.close();
-      return v;
-      //return await Hive.box(_boxName).close();
+      Box<String> box = Hive.box(_boxName);
+      await box.close();
     }
   }
 }

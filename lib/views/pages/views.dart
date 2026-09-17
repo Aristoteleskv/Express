@@ -1,7 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:express/util/colors.dart';
 import 'package:express/util/constants.dart';
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart' hide CarouselController;
 
 import '../widgets/custom_buttom.dart';
 
@@ -136,7 +136,7 @@ class _ComprasState extends State<Compras> {
                     ),
                     texto: "TRANSFERENCIAS",
                     onPress: () {
-                      Navigator.of(context).pushNamed('/transfe');
+                      Navigator.of(context).pushNamed('/transferencias');
                     },
                   ),
                   CustomButton(
@@ -276,7 +276,7 @@ class _ConsultasState extends State<Consultas> {
                     ),
                     texto: "TRANSFERENCIAS",
                     onPress: () {
-                      Navigator.of(context).pushNamed('/transfe');
+                      Navigator.of(context).pushNamed('/transferencias');
                     },
                   ),
                   CustomButton(
@@ -416,7 +416,7 @@ class _PagamentosState extends State<Pagamentos> {
                     ),
                     texto: "TRANSFERENCIAS",
                     onPress: () {
-                      Navigator.of(context).pushNamed('/transfe');
+                      Navigator.of(context).pushNamed('/transferencias');
                     },
                   ),
                   CustomButton(
@@ -556,7 +556,7 @@ class _TransferenciasState extends State<Transferencias> {
                     ),
                     texto: "TRANSFERENCIAS",
                     onPress: () {
-                      Navigator.of(context).pushNamed('/transfe');
+                      Navigator.of(context).pushNamed('/transferencias');
                     },
                   ),
                   CustomButton(
@@ -696,7 +696,7 @@ class _LevantamentoState extends State<Levantamento> {
                     ),
                     texto: "TRANSFERENCIAS",
                     onPress: () {
-                      Navigator.of(context).pushNamed('/transfe');
+                      Navigator.of(context).pushNamed('/transferencias');
                     },
                   ),
                   CustomButton(
